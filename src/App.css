@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    font-size: 1.5rem;
+    background-color: black;
+    color:pink;
+    font-family: 'Poppins',sans-serif;
+}
+main {
+    display: grid;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    gap: 0.1rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+.form input {
+    font-size: 2.427rem;
+    padding: 1rem 1.618rem;
+    border-radius: 1rem;
+}
+.input-container {
+    display: grid;
+}
+.input-container p {
+    margin-top:0;
+    margin-bottom:0;
+    margin-left: 1rem;
+    padding:0;
+    color: lightpink;
+}
+.warn-container {
+    height: 1.5rem;
+    margin:0;
+    padding:0.2rem;
+}
+.warning {
+    font-size: 1.4rem;
+    padding:0;
+    margin:0;
+}
+.btn-container {
+    display:grid;
+    align-items:center;
+}
+.btn-container button {
+    font-size: 1.1125rem;
+    padding: 0.4rem 0.6472rem;
+    border-radius: 1rem;
+    background-color: white;
+    font-weight: 700;
+    border: 1px solid whitesmoke;
+}
+.todos-container {
+    border: 1px solid pink;
+    margin: 1rem;
+    padding: 0.4rem 0.6472rem;
+    border-radius: 1rem;
+}
+.todos-container h1 {
+    text-align: center;
+}
+.list-container {
+    display:grid;
+    gap: 1rem;
+}
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.todoItem input[type="checkbox"] {
+    width: 20px;
+    height:20px;
+}
+/* When the input is 'checked' the label element is selected and changed */
+.todoItem input:checked ~ label {
+    text-decoration: line-through;
+    color:gray;
+}
+.todoItem button {
+    background-color: black;
+    border: 2px solid pink;
+    color:pink;
+    border-radius: 1rem;
+    padding: 0.4rem 0.6472rem;
+    font-weight: 600;
+}
